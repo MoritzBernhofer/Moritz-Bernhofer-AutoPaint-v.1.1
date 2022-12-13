@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\asset1.png" />
+    <None Remove="Assets\asset2.png" />
+    <None Remove="Assets\asset3.png" />
+    <None Remove="Assets\audio.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.1.0" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\asset1.png" />
+    <Resource Include="Assets\asset2.png" />
+    <Resource Include="Assets\asset3.png" />
+  </ItemGroup>
+
+</Project>
